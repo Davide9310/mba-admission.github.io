@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!--
+Summary:
+Responsive Video Stream: The page is designed to display a fullscreen video stream using Cloudflare Stream, with a poster image before the video starts.
+SEO and oEmbed Support: The meta tags and oEmbed link help with SEO and allow the video to be easily embedded elsewhere.
+Fullscreen Experience: The CSS ensures that the video occupies the full viewport, hiding any overflow to maintain a clean look.
+-->
+
+
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no"
+      />
+      <meta name="description" content="Stream" />
+      
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="https://customer-ecy0wgmn1dow5gsd.cloudflarestream.com/oembed?url=https%3A%2F%2Fcustomer-ecy0wgmn1dow5gsd.cloudflarestream.com%2F6ddc4e58686e3954ce84fdb3ebb0d551%2Fiframe%3Fposter%3Dhttps%253A%252F%252Fcustomer-ecy0wgmn1dow5gsd.cloudflarestream.com%252F6ddc4e58686e3954ce84fdb3ebb0d551%252Fthumbnails%252Fthumbnail.jpg%253Ftime%253D%2526height%253D600"
+    />
+  
+      <title>Stream</title>
+      <style>
+        html,
+        body {
+          height: 100%;
+        }
+
+        body {
+          margin: 0px;
+          overflow: hidden;
+        }
+      </style>
+    </head>
+    <body>
+      <stream
+        width="100%" height="100%" src="6ddc4e58686e3954ce84fdb3ebb0d551" cmcd controls poster="https://customer-ecy0wgmn1dow5gsd.cloudflarestream.com/6ddc4e58686e3954ce84fdb3ebb0d551/thumbnails/thumbnail.jpg?time=&height=600" customer-domain-prefix="customer-ecy0wgmn1dow5gsd"
+      ></stream>
+      <script
+        data-cfasync="false"
+        defer=""
+        type="text/javascript"
+        src="https://customer-ecy0wgmn1dow5gsd.cloudflarestream.com/embed/sdk-iframe-integration.fla9.latest.js?video=6ddc4e58686e3954ce84fdb3ebb0d551"
+      ></script>
+    </body>
+  </html>
